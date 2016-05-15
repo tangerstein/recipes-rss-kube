@@ -4,7 +4,7 @@ MAINTAINER info.inspectit@novatec-gmbh.de
 #declare variable for inspectIT
 ENV INSPECTIT_CONFIG_HOME /recipes-rss/agent/config
 ENV ARTIFACT_DIR ${ARTIFACT_DIR}
-COPY ARTIFACT_DIR /recipes-rss
+COPY ${ARTIFACT_DIR} /recipes-rss
 WORKDIR /recipes-rss
 
 COPY run.sh /run.sh
